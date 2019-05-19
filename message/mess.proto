@@ -1,0 +1,21 @@
+syntax = "proto3";
+package message;
+
+message MessageHeader {
+  uint64 MType = 1;
+  uint64 MLength = 2;
+}
+
+message SimpleMessageC {
+  uint64 A = 31;
+  string B = 32;
+}
+
+message HeavyMessageC {
+  uint64 A = 41;
+  uint64 B = 42;
+  uint64 C = 43;
+  string D = 44;
+  string E = 45;
+  string F = 46;
+}
